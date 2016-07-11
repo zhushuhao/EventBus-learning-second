@@ -37,17 +37,6 @@ public class MainActivity extends AppCompatActivity {
         EventBus.getDefault().register(this);
     }
 
-//    07-11 00:10:32.508 17347-17347/com.d.dao.eventbus_learning_second E/EventBusTest: MainThread接收到消息hello EventBus Main时间:1468210232512
-//    07-11 00:10:32.508 17347-17347/com.d.dao.eventbus_learning_second E/EventBusTest: onMainThread returned: Thread[main,5,main]
-//    07-11 00:10:32.508 17347-17724/com.d.dao.eventbus_learning_second E/EventBusTest: BackGroundThread接收到消息hello EventBus Main
-//    07-11 00:10:32.508 17347-17724/com.d.dao.eventbus_learning_second E/EventBusTest: onBackgroundThread returned: Thread[pool-1-thread-1,5,main]时间:1468210232514
-//    07-11 00:10:32.508 17347-17347/com.d.dao.eventbus_learning_second E/EventBusTest: PostThread接收到消息hello EventBus Main
-//    07-11 00:10:32.508 17347-17347/com.d.dao.eventbus_learning_second E/EventBusTest: onPostThread returned: Thread[main,5,main]时间:1468210232515
-//    07-11 00:10:32.508 17347-17727/com.d.dao.eventbus_learning_second E/EventBusTest: AsyncThread接收到消息hello EventBus Main
-//    07-11 00:10:32.508 17347-17727/com.d.dao.eventbus_learning_second E/EventBusTest: onAsyncThread returned: Thread[pool-1-thread-2,5,main]时间:1468210232518
-//
-//            --------- beginning of /dev/log/system
-
 
     @Subscribe(threadMode = ThreadMode.MainThread)
     public void onMainMessage1(MainMessage msg) {
